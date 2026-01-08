@@ -1,8 +1,10 @@
-#body{
-    background-color: #dae1e9;
+#full{
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
 }
 
-#navTag{
+.navbar{
     background-color: #cddae8;
 }
 
