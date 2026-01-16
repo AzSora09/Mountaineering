@@ -1,7 +1,9 @@
+/* Font for whole page */
 * {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* Header Image */
 #headerID {
     background: url("../imgs/hiker-going-up-aiguille-du-midi.jpg") no-repeat bottom;
     width: 100%;
@@ -9,17 +11,19 @@
     background-size: cover;
 }
 
+/* Header image would change size in diffeerent screen size */
 @media(max-width: 768px) {
     #headerID {
         height: 45vh;
     }
 }
 
+/* Transparent navbar normal */
 .navbar {
     background-color: rgba(255, 255, 255, 0.01);
 }
 
-
+/* Navbar animation on scroll */
 @keyframes navScroll {
     from{
         transform: scale(0);
@@ -29,7 +33,7 @@
     }
 }
 
-
+/* Navbar scrolled variation */
 .navbar.scrolldown {
     width: 90%;
     background: rgba(176, 176, 255, 0.25);
@@ -78,20 +82,40 @@
   );
 }
 
-
-
-#footerTag {
-    background-color: #1b2840;
-    height: 300px;
-}
-
+/* Header Text styling */
 #HeaderContent{
-    position: relative;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
     top: 30%;
-    color: #ffffff;
-    text-shadow: #000000 3px 3px;
+    color: rgb(255, 255, 255);
 }
 
 #HeaderContent h1{
-    font-size: 64px;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+#HeaderContent p{
+    font-size: 32px;
+}
+
+/* Header text position and styling in small screen */
+@media(max-width: 768px){
+    #HeaderContent{
+        top: 15%
+    }
+    #HeaderContent h1{
+        font-size: 64px;
+    }
+    #HeaderContent p{
+        font-size: 18px;
+    }
+}
+
+
+
+/* Footer Styling */
+#footerTag {
+    background-color: #1b2840;
+    height: 300px;
 }
