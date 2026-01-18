@@ -3,40 +3,40 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-/* Header Image */
-#headerID {
-    background: url("../imgs/hiker-going-up-aiguille-du-midi.jpg") no-repeat bottom;
-    width: 100%;
-    height: 80vh;
-    background-size: cover;
+
+body{
+    background: black;
 }
 
-/* Header image would change size in diffeerent screen size */
-@media(max-width: 768px) {
-    #headerID {
-        height: 45vh;
-    }
-}
 
 /* Transparent navbar normal */
 .navbar {
-    background-color: rgba(255, 255, 255, 0.01);
+    background: rgba(255, 255, 255, 0.01);
 }
+
+.nav-item,
+.nav-item .dropdown-item {
+    font-weight: 500;
+}
+
 
 /* Navbar animation on scroll */
 @keyframes navScroll {
-    from{
+    from {
         transform: scale(0);
     }
-    to{
+
+    to {
         transform: scale(1)
     }
 }
 
+
+
 /* Navbar scrolled variation */
 .navbar.scrolldown {
     width: 90%;
-    background: rgba(176, 176, 255, 0.25);
+    background: rgba(255, 255, 255, 0.25);
     animation-name: navScroll;
     animation-duration: 0.1s;
     transition: animation-name ease-in-out 0.1s;
@@ -44,12 +44,11 @@
     -webkit-backdrop-filter: blur(5px);
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 
-    0 8px 32px rgba(0, 0, 0, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.5),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
-    inset 0 0 0px 0px rgba(255, 255, 255, 0);
-    overflow: hidden;
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+        inset 0 0 0px 0px rgba(255, 255, 255, 0);
 }
 
 .navbar.scrolldown::before {
@@ -59,12 +58,10 @@
     left: 0;
     right: 0;
     height: 1px;
-    background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.8),
-    transparent
-  );
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(255, 255, 255, 0.8),
+            transparent);
 }
 
 .navbar.scrolldown::after {
@@ -74,40 +71,237 @@
     left: 0;
     width: 1px;
     height: 100%;
-    background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.8),
-    transparent,
-    rgba(255, 255, 255, 0.3)
-  );
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.8),
+            transparent,
+            rgba(255, 255, 255, 0.3));
 }
 
+/* Navbar Dropdown Styling (Large Screen) */
+@media(min-width: 768px) {
+    .dropdown-menu {
+        background-color: rgba(255, 255, 255, 0.2);
+        border: none;
+    }
+
+    .dropdown:hover>.dropdown-menu {
+        display: block;
+        margin-top: 2px;
+    }
+}
+
+
+/* Navbar Dropdown Styling On Scroll (Large Screen) */
+@media(min-width: 768px) {
+    .navbar.scrolldown .dropdown-menu {
+        width: fit-content;
+        background: rgba(255, 255, 255, 0.25);
+        translate: scaleX;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow:
+            0 8px 32px rgba(0, 0, 0, 0.1),
+            inset 0 1px 0 rgba(255, 255, 255, 0.5),
+            inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+            inset 0 0 0px 0px rgba(255, 255, 255, 0);
+        overflow: hidden;
+    }
+
+    .navbar.scrolldown .dropdown-menu::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: linear-gradient(90deg,
+                transparent,
+                rgba(255, 255, 255, 0.8),
+                transparent);
+    }
+
+    .navbar.scrolldown .dropdown-menu::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1px;
+        height: 100%;
+        background: linear-gradient(180deg,
+                rgba(255, 255, 255, 0.8),
+                transparent,
+                rgba(255, 255, 255, 0.3));
+    }
+
+    
+}
+
+
+/* Dropdown item on hover */
+
+    .dropdown-item:hover {
+        background: rgba(0, 0, 0, 0.16);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .dropdown-item:hover::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: linear-gradient(90deg,
+                transparent,
+                rgba(255, 255, 255, 0.8),
+                transparent);
+    }
+
+    .dropdown-item:hover::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1px;
+        height: 100%;
+        background: linear-gradient(180deg,
+                rgba(255, 255, 255, 0.8),
+                transparent,
+                rgba(255, 255, 255, 0.3));
+    }
+
+
+/* Navbar toggle styling small screen */
+@media(max-width: 768px) {
+    .navbar:not(.navbar.scrolldown):has(.navbar-collapse.collapse.show) {
+        padding-top: 500px;
+        position: relative;
+        z-index: 50;
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        overflow: hidden;
+    }
+
+    .navbar:not(.navbar.scrolldown):has(.navbar-collapse.collapse.show)::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: linear-gradient(90deg,
+                transparent,
+                rgba(255, 255, 255, 0.8),
+                transparent);
+    }
+
+    .navbar:not(.navbar.scrolldown):has(.navbar-collapse.collapse.show)::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1px;
+        height: 100%;
+        background: linear-gradient(180deg,
+                rgba(255, 255, 255, 0.8),
+                transparent,
+                rgba(255, 255, 255, 0.3));
+    }
+
+    /* Navbar toggle dropdown small screen */
+    .dropdown-menu {
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: none;
+        overflow: hidden;
+    }
+
+    .dropdown-menu::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: linear-gradient(90deg,
+                transparent,
+                rgba(255, 255, 255, 0.8),
+                transparent);
+    }
+
+    .dropdown-menu::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1px;
+        height: 100%;
+        background: linear-gradient(180deg,
+                rgba(255, 255, 255, 0.8),
+                transparent,
+                rgba(255, 255, 255, 0.3));
+    }
+}
+
+
+
+
+
+
+/* Header Image */
+#headerID {
+    background: url("../imgs/hiker-going-up-aiguille-du-midi.jpg") no-repeat bottom;
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+}
+
+
+
+/* Header image would change size in diffeerent screen size */
+@media(max-width: 768px) {
+    #headerID {
+        height: 45vh;
+    }
+}
+
+
 /* Header Text styling */
-#HeaderContent{
+#HeaderContent {
     background: rgba(0, 0, 0, 0.2);
     position: absolute;
     top: 30%;
     color: rgb(255, 255, 255);
 }
 
-#HeaderContent h1{
+#HeaderContent h1 {
     font-size: 80px;
     font-weight: bold;
 }
 
-#HeaderContent p{
+#HeaderContent p {
     font-size: 32px;
 }
 
+
 /* Header text position and styling in small screen */
-@media(max-width: 768px){
-    #HeaderContent{
+@media(max-width: 768px) {
+    #HeaderContent {
         top: 15%
     }
-    #HeaderContent h1{
+
+    #HeaderContent h1 {
         font-size: 64px;
     }
-    #HeaderContent p{
+
+    #HeaderContent p {
         font-size: 18px;
     }
 }
