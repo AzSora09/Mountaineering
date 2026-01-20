@@ -1,3 +1,4 @@
+// Add or Remove class "scrolldown" and other bootstrap classes in navbar according to scroll length
 $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     if ($(window).scrollTop() > 200) {

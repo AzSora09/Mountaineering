@@ -4,11 +4,6 @@
 }
 
 
-body{
-    background: black;
-}
-
-
 /* Transparent navbar normal */
 .navbar {
     background: rgba(255, 255, 255, 0.01);
@@ -309,7 +304,36 @@ body{
 
 
 /* Footer Styling */
+
 #footerTag {
-    background-color: #1b2840;
-    height: 300px;
+    color: #FFFFFF;
+    background: #1d1b40;
+}
+.footer-list{
+    list-style-type: none;
+}
+.footer-heading{
+    font-weight: 700;
+    font-size: 150%;
+}
+.footer-link{
+    color: #c2c2c2;
+    font-size: 120%;
+    text-decoration: none;
+}
+.footer-link:hover{
+    color: #FFFFFF;
+    cursor: pointer;
+}
+#footerBase{
+    list-style-type: none;
+    color: #FFFFFF;
+}
+.footer-base{
+    color: #d6d6d6;
+    text-decoration: none;
+}
+.footer-base:hover{
+    color: #ffffff;
+    cursor: pointer;
 }
