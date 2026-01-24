@@ -1,3 +1,20 @@
+/* Header Image */
+#headerID{
+    background: url("../imgs/History-Hero.jpg") no-repeat bottom;
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+}
+
+/* Header image would change size in diffeerent screen size */
+@media(max-width: 768px) {
+    #headerID {
+        height: 45vh;
+    }
+}
+
+
+/* Cards styling */
 .Cards {
     border-radius: 40px;
     background: #e0e0e0;
@@ -19,6 +36,7 @@
     }
 }
 
+/* Cards animation */
 @keyframes scrollAnim {
     from{
         opacity: 0;
@@ -32,6 +50,7 @@
     }
 }
 
+/* Cards text alignment for Large screen */
 @media(min-width: 768px) {
     .card-row1 {
         height: 40%;
@@ -42,6 +61,7 @@
     }
 }
 
+/* Cards text alignment for Small screen */
 @media(max-width: 768px) {
     .card-row1 {
         height: 35%;
