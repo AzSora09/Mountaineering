@@ -10,7 +10,7 @@ body{
 
 /* Transparent navbar normal */
 .navbar {
-    background: rgba(255, 255, 255, 0.01);
+    background: rgba(255, 255, 255, 0.2);
     .navbar-brand .img-fluid{
         height: 4rem;
     }
