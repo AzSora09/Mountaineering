@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Weather Risk</title>
+
+    <!-- icon link for titlebar -->
+    <link rel="icon" type="image/png" href="./brand/png/Mountaineering-logo.png">
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!-- Bootstrap icons link -->
+    <link rel="stylesheet" href="./bootstrap-icons-1.13.1/bootstrap-icons.min.css">
+    <!-- Base CSS link -->
+    <link rel="stylesheet" href="./css/base.css">
+    <!-- Page specific CSS link -->
+    <link rel="stylesheet" href="./css/weather-risk.css">
+    <!-- JQuery Link -->
+    <script src="./jquery-3.7.1.js"></script>
+</head>
+
+<body id="body">
+
+    <header id="headerID" class="">
+        <!-- Navbar start -->
+        <nav class="navbar navbar-expand-lg navbar-light py-xl-3 py-lg-3 py-md-3 fs-5 px-lg-5 px-3 py-2" id="navEl">
+            <div class="container-fluid" id="navTag">
+
+                <!-- Navbar Button for Small Screens -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent"
+                    id="navToggle">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <!-- Brand -->
+                <a href="./home.html" class="navbar-brand"><img src="./brand/png/Mountaineering.png" alt=""
+                        class="img-fluid"></a>
+
+
+                <!-- Nav Items -->
+                <div class="collapse navbar-collapse mt-3 mt-lg-0" id="navContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 gap-3 ms-auto pe-5">
+                        <!-- Home link -->
+                        <a href="./home.html" class="nav-link h5">Home</a>
+                        <!-- "About" Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a href="" class="nav-link dropdown-toggle h5" role="button"
+                                data-bs-toggle="dropdown">About</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./aboutus.html" class="dropdown-item">About Us</a></li>
+                                <li><a href="./history.html" class="dropdown-item">History</a></li>
+                            </ul>
+                        </li>
+                        <!-- "Explore" Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a href="" class="nav-link dropdown-toggle h5" role="button"
+                                data-bs-toggle="dropdown">Explore</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./types-styles.html" class="dropdown-item">Types & Styles</a></li>
+                                <li><a href="./techniques.html" class="dropdown-item">Techniques</a></li>
+                                <li><a href="./sheltering.html" class="dropdown-item">Sheltering</a></li>
+                                <li><a href="./records.html" class="dropdown-item">Records</a></li>
+                                <li><a href="./clubs-org.html" class="dropdown-item">Clubs & Organizations</a></li>
+                            </ul>
+                        </li>
+                        <!-- "Safety" Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a href="" class="nav-link dropdown-toggle h5" role="button"
+                                data-bs-toggle="dropdown">Safety</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./hazards.html" class="dropdown-item">Hazards</a></li>
+                                <li><a href="./safety-guidelines.html" class="dropdown-item">Safety Guidelines</a></li>
+                                <li><a href="./weather-risk.html" class="dropdown-item">Weather & Risk</a></li>
+                            </ul>
+                        </li>
+                        <!-- "Media" Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a href="" class="nav-link dropdown-toggle h5" role="button"
+                                data-bs-toggle="dropdown">Media</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./gallery.html" class="dropdown-item">Gallery</a></li>
+                                <li><a href="./success-stories.html" class="dropdown-item">Success Stories</a></li>
+                                <li><a href="./news.html" class="dropdown-item">News</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- Hero text -->
+        <div class="container-fluid py-3 text-center" id="HeaderContent">
+            <h1>WEATHER & RISK</h1>
+            <p>Understanding how weather conditions influence mountaineering safety.</p>
+        </div>
+    </header>
+
+
+
+
+
+
+    <!-- Main Content -->
+    <!-- Introduction -->
+    <div class="container Cards my-5">
+        <div class="row py-3 px-3">
+            <div class="col-12 col-lg-6 order-first order-lg-last">
+                <div class="row card-row1">
+                    <div class="col-12 mt-3 Card-heading">
+                        Weather as a Critical Risk Factor
+                    </div>
+                </div>
+                <div class="row card-row2">
+                    <div class="col-12 mb-5 mt-3">
+                        Weather plays a major role in mountaineering risk. Rapid changes in temperature, visibility,
+                        wind, and snowfall can significantly affect climbing conditions and decision-making in
+                        mountainous environments.
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-lg-6 mt-5 mt-lg-0 order-last order-lg-first">
+                <img src="./imgs/weather-critical-risk.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 1 -->
+    <div class="container Cards my-5">
+        <div class="row py-3 px-3">
+            <div class="col-12 col-lg-6 order-first order-lg-first">
+                <div class="row card-row1">
+                    <div class="col-12 mt-3 Card-heading">
+                        Temperature Extremes
+                    </div>
+                </div>
+                <div class="row card-row2">
+                    <div class="col-12 mb-5">
+                        Mountains experience extreme temperature variations, often dropping well below freezing at
+                        higher altitudes. Cold exposure increases the risk of frostbite, hypothermia, and reduced
+                        physical performance.
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-lg-6 mt-5 mt-lg-0 order-last order-lg-last">
+                <img src="./imgs/weather-temperature.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="container Cards my-5">
+        <div class="row py-3 px-3">
+            <div class="col-12 col-lg-6 order-first order-lg-last">
+                <div class="row card-row1">
+                    <div class="col-12 mt-3 Card-heading">
+                        Wind and Wind Chill
+                    </div>
+                </div>
+                <div class="row card-row2">
+                    <div class="col-12 mb-5">
+                        Strong winds are common at high altitudes and can greatly increase heat loss. Wind can also
+                        affect balance and movement, especially on exposed ridges and narrow routes.
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-lg-6 mt-5 mt-lg-0 order-last order-lg-first">
+                <img src="./imgs/weather-wind.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="container Cards my-5">
+        <div class="row py-3 px-3">
+            <div class="col-12 col-lg-6 order-first order-lg-first">
+                <div class="row card-row1">
+                    <div class="col-12 mt-3 Card-heading">
+                        Visibility and Cloud Cover
+                    </div>
+                </div>
+                <div class="row card-row2">
+                    <div class="col-12 mb-5">
+                        Fog, cloud cover, and snowfall can reduce visibility, making navigation difficult. Poor
+                        visibility increases the risk of route-finding errors and accidents.
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-lg-6 mt-5 mt-lg-0 order-last order-lg-last">
+                <img src="./imgs/weather-fog.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="container Cards my-5">
+        <div class="row py-3 px-3">
+            <div class="col-12 col-lg-6 order-first order-lg-last">
+                <div class="row card-row1">
+                    <div class="col-12 mt-3 Card-heading">
+                        Snowfall and Ice Conditions
+                    </div>
+                </div>
+                <div class="row card-row2">
+                    <div class="col-12 mb-5">
+                        Fresh snowfall and ice formation can change terrain stability. These conditions may increase the
+                        risk of slips, avalanches, and falling ice, requiring extra caution and assessment.
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-lg-6 mt-5 mt-lg-0 order-last order-lg-first">
+                <img src="./imgs/weather-snowfall.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="container Cards my-5">
+        <div class="row py-3 px-3">
+            <div class="col-12 col-lg-6 order-first order-lg-first">
+                <div class="row card-row1">
+                    <div class="col-12 mt-3 Card-heading">
+                        Storms and Rapid Weather Changes
+                    </div>
+                </div>
+                <div class="row card-row2">
+                    <div class="col-12 mb-5 mt-3">
+                        Mountain weather can change rapidly, turning clear conditions into severe storms within hours.
+                        Thunderstorms, heavy snowfall, and sudden drops in pressure pose serious risks to climbers.
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-lg-6 mt-5 mt-lg-0 order-last order-lg-last">
+                <img src="./imgs/weather-storm.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="container Cards my-5">
+        <div class="row py-3 px-3">
+            <div class="col-12 col-lg-6 order-first order-lg-last">
+                <div class="row card-row1">
+                    <div class="col-12 mt-3 Card-heading">
+                        Seasonal Weather Risks
+                    </div>
+                </div>
+                <div class="row card-row2">
+                    <div class="col-12 mb-5 mt-3">
+                        Different seasons present different weather-related risks. Summer may bring storms and melting
+                        ice, while winter introduces extreme cold, deep snow, and shorter daylight hours.
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-lg-6 mt-5 mt-lg-0 order-last order-lg-first">
+                <img src="./imgs/weather-seasonal.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!-- Conclusion -->
+    <div class="container Cards my-5">
+        <div class="row py-3 px-3">
+            <div class="col-12 col-lg-6 order-first order-lg-first">
+                <div class="row card-row1">
+                    <div class="col-12 mt-3 Card-heading">
+                        Managing Weather-Related Risk
+                    </div>
+                </div>
+                <div class="row card-row2">
+                    <div class="col-12 mb-5 mt-3">
+                        Understanding weather patterns and recognizing risk factors helps mountaineers make informed
+                        decisions. Awareness of weather-related risks is essential for safer planning and successful
+                        climbs.
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-lg-6 mt-5 mt-lg-0 order-last order-lg-last">
+                <img src="./imgs/weather-managing.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Footer Start -->
+    <footer class="mt-auto" id="footerTag">
+        <div class="container-fluid px-5 py-4">
+            <!-- Footer Top text -->
+            <div class="row">
+                <div class="col-12 text-center mt-2">
+                    <img src="./brand/png/Mountaineering-light.png" alt="" class="img-fluid" id="footerBrand">
+                </div>
+            </div>
+
+            <!-- Footer Columns -->
+            <div class="row mt-3">
+
+                <!-- Empty Column -->
+                <div class="col d-none d-xl-block"></div>
+
+                <!-- Mountaineering (Column 1) -->
+                <div class="col-6 col-lg-3 col-xl-3">
+                    <ul class="footer-list">
+                        <li class="footer-heading">Mountaineering</li>
+                        <li class="footer-list-item mt-2"><a href="./home.html" class="footer-link">Home</a></li>
+                        <li class="footer-list-item"><a href="./history.html" class="footer-link">History</a></li>
+                        <li class="footer-list-item"><a href="./aboutus.html" class="footer-link">About Us</a></li>
+                        <li class="footer-list-item"><a href="./gallery.html" class="footer-link">Gallery</a></li>
+                    </ul>
+                </div>
+
+                <!-- Explore (Column 2) -->
+                <div class="col-6 col-lg-3 col-xl-3">
+                    <ul class="footer-list">
+                        <li class="footer-heading">Explore</li>
+                        <li class="footer-list-item mt-2"><a href="./types-styles.html" class="footer-link">Types &
+                                Styles</a></li>
+                        <li class="footer-list-item"><a href="./techniques.html" class="footer-link">Techniques</a></li>
+                        <li class="footer-list-item"><a href="./sheltering.html" class="footer-link">Sheltering</a></li>
+                        <li class="footer-list-item"><a href="./records.html" class="footer-link">Records</a></li>
+                        <li class="footer-list-item"><a href="./clubs-org.html" class="footer-link">Clubs &
+                                Organizations</a></li>
+                    </ul>
+                </div>
+
+                <!-- Safety & Updates (Column 3) -->
+                <div class="col-6 col-lg-3 col-xl-3">
+                    <ul class="footer-list">
+                        <li class="footer-heading">Safety & Updates</li>
+                        <li class="footer-list-item mt-2"><a href="./hazards.html" class="footer-link">Hazards</a></li>
+                        <li class="footer-list-item"><a href="./safety-guidelines.html" class="footer-link">Safety
+                                Guidelines</a></li>
+                        <li class="footer-list-item"><a href="./weather-risk.html" class="footer-link">Weather &
+                                Risk</a></li>
+                        <li class="footer-list-item"><a href="./success-stories.html" class="footer-link">Success
+                                Stories</a></li>
+                        <li class="footer-list-item"><a href="./news.html" class="footer-link">News</a></li>
+                    </ul>
+                </div>
+
+                <!-- Empty Column -->
+                <div class="col d-none d-xl-block"></div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <ul class="d-flex justify-content-center gap-4 mt-5" id="footerBase">
+                        <li><i class="bi bi-c-circle"></i> 2026 Mountaineering</li>
+                        <li><a href="#" class="footer-base">Privacy Policy</a></li>
+                        <li><a href="#" class="footer-base">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Link -->
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- Base Javascript link -->
+    <script src="./js/base.js"></script>
+</body>
+
+</html>
