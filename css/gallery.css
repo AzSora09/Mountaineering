@@ -13,7 +13,33 @@
     }
 }
 
+/* Header Content positioning */
 #HeaderContent{
     position: relative;
     top: 35%;
+}
+
+/* Main Content styling */
+.main-content{
+    width: 90vw;
+    margin: 1rem auto;
+}
+
+/* Column padding and img alignment */
+.col-6:has(.gallery-item){
+    padding: 0 1rem;
+    text-align: center;
+}
+
+/* Gallery items margin and styling */
+.gallery-item{
+    width: 100%;
+    border-radius: 50px;
+    margin: 1rem auto;
+    transition: transform 0.125s ease-in-out;
+}
+
+/* Images effect on hover */
+.gallery-item:hover{
+    transform: scale(1.05);
 }

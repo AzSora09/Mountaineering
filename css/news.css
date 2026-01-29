@@ -38,6 +38,7 @@
     padding-bottom: 1rem;
 }
 
+/* margin top-bottom for columns containing Cards */
 .col-12:has(.Cards){
     margin: 1rem 0;
 }
