@@ -292,7 +292,7 @@ body {
     }
 
     #HeaderContent p {
-        font-size: 1rem;
+        font-size: 1.7rem;
     }
 }
 
@@ -308,7 +308,7 @@ body {
 }
 
 #footerBrand {
-    height: 10rem;
+    height: 9rem;
 }
 
 .footer-list {
@@ -317,12 +317,12 @@ body {
 
 .footer-heading {
     font-weight: 700;
-    font-size: 150%;
+    font-size: 1.4rem;
 }
 
 .footer-link {
     color: #c2c2c2;
-    font-size: 120%;
+    font-size: 100%;
     text-decoration: none;
 }
 
@@ -344,4 +344,10 @@ body {
 .footer-base:hover {
     color: #ffffff;
     cursor: pointer;
+}
+
+@media(max-width: 768px) {
+    .footer-base {
+        font-size: 0.5rem;
+    }
 }
