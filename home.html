@@ -4,66 +4,401 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
     <title>Mountaineering</title>
+
+    <!-- icon link for titlebar -->
+    <link rel="icon" type="image/png" href="./brand/png/Mountaineering-logo.png">
+    <!-- Bootstrap CSS link -->
     <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!-- Bootstrap icons link -->
     <link rel="stylesheet" href="./bootstrap-icons-1.13.1/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./css/home.css">   
+    <!-- Base CSS link -->
+    <link rel="stylesheet" href="./css/base.css">
+    <!-- Page specific CSS link -->
+    <link rel="stylesheet" href="./css/home.css">
+    <!-- JQuery Link -->
     <script src="./jquery-3.7.1.js"></script>
 </head>
 
 <body id="body">
-    <!-- Navbar start -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light py-xl-3 py-l-3 py-md-3 fs-5 px-lg-5 border-bottom border-2 border-dark">
-        <div class="container-fluid" id="navTag">
 
-            <!-- Navbar Button for Small Screens -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent"
-                id="navToggle">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <header id="headerID" class="">
+        <!-- Navbar start -->
+        <nav class="navbar navbar-expand-lg navbar-light py-xl-3 py-lg-3 py-md-3 fs-5 px-lg-5 px-3 py-2" id="navEl">
+            <div class="container-fluid" id="navTag">
 
-
-            <!-- Brand -->
-            <h3>[Placeholder]</h3>
+                <!-- Navbar Button for Small Screens -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent"
+                    id="navToggle">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
 
-            <!-- Nav Items -->
-            <div class="collapse navbar-collapse" id="navContent">
-                <ul class="navbar-nav mb-2 mb-lg-0 gap-3 ms-auto pe-5">
-                    <li class="nav-item"><a href="" class="nav-link h5">Item1</a></li>
-                    <li class="nav-item"><a href="" class="nav-link h5">Item2</a></li>
-                    <li class="nav-item"><a href="" class="nav-link h5">Item3</a></li>
-                    <li class="nav-item"><a href="" class="nav-link h5">Item4</a></li>
-                </ul>
+                <!-- Brand -->
+                <a href="./home.html" class="navbar-brand"><img src="./brand/png/Mountaineering.png" alt=""
+                        class="img-fluid"></a>
+
+
+                <!-- Nav Items -->
+                <div class="collapse navbar-collapse mt-3 mt-lg-0" id="navContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 gap-3 ms-auto pe-5">
+                        <!-- Home link -->
+                        <a href="./home.html" class="nav-link h5">Home</a>
+                        <!-- "About" Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a href="" class="nav-link dropdown-toggle h5" role="button"
+                                data-bs-toggle="dropdown">About</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./aboutus.html" class="dropdown-item">About Us</a></li>
+                                <li><a href="./history.html" class="dropdown-item">History</a></li>
+                            </ul>
+                        </li>
+                        <!-- "Explore" Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a href="" class="nav-link dropdown-toggle h5" role="button"
+                                data-bs-toggle="dropdown">Explore</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./types-styles.html" class="dropdown-item">Types & Styles</a></li>
+                                <li><a href="./techniques.html" class="dropdown-item">Techniques</a></li>
+                                <li><a href="./sheltering.html" class="dropdown-item">Sheltering</a></li>
+                                <li><a href="./records.html" class="dropdown-item">Records</a></li>
+                                <li><a href="./clubs-org.html" class="dropdown-item">Clubs & Organizations</a></li>
+                            </ul>
+                        </li>
+                        <!-- "Safety" Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a href="" class="nav-link dropdown-toggle h5" role="button"
+                                data-bs-toggle="dropdown">Safety</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./hazards.html" class="dropdown-item">Hazards</a></li>
+                                <li><a href="./safety-guidelines.html" class="dropdown-item">Safety Guidelines</a></li>
+                                <li><a href="./weather-risk.html" class="dropdown-item">Weather & Risk</a></li>
+                            </ul>
+                        </li>
+                        <!-- "Media" Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a href="" class="nav-link dropdown-toggle h5" role="button"
+                                data-bs-toggle="dropdown">Media</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./gallery.html" class="dropdown-item">Gallery</a></li>
+                                <li><a href="./success-stories.html" class="dropdown-item">Success Stories</a></li>
+                                <li><a href="./news.html" class="dropdown-item">News</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- Hero text -->
+        <div class="container-fluid py-3 text-center" id="HeaderContent">
+            <h1>MOUNTAINEERING</h1>
+            <p>Exploring the challenges, history, and spirit of mountain climbing.</p>
+        </div>
+    </header>
+
+
+
+
+
+
+    <!-- Main Content -->
+
+    <!-- Introduction -->
+    <div class="container-fluid mt-5 mb-3" id="introSect">
+        <div class="row">
+            <div class="col" id="introCont">
+                <span id="introHeading">
+                    What is Mountaineering?
+                </span>
+
+                <p id="introText">
+                    Mountaineering is the sport and practice of climbing mountains, combining physical endurance,
+                    technical skills, and careful planning. It involves navigating challenging terrain, adapting to
+                    extreme weather, and working closely with others to reach high-altitude goals safely and
+                    responsibly.
+                </p>
             </div>
 
+            <!-- Empty column for space -->
+            <div class="col d-none d-lg-block"></div>
         </div>
-    </nav>
-
-    <div id="full">
-
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
     </div>
 
-<img src="./imgs/fuji-mountain-sunrise.jpg" class="img-fluid" alt="">
+    <!-- Central header before other content -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center">
+                <span style="font-size: 50px; font-weight: 550;">
+                    Delve into the World of Mountaineering
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- History Section -->
+    <div id="historyCont">
+        <div class="row">
+            <div class="col-12 col-lg-6" id="historyMain">
+                <span id="historyHeading">
+                    History
+                </span>
+
+                <p id="historyText">
+                    Learn how mountaineering evolved from early explorations to modern expeditions across the world's
+                    highest peaks.
+                </p>
+
+                <div id="historyBtnParent">
+                    <button class="btn" id="historyBtn">Explore History</button>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 text-end">
+                <img src="./imgs/home-history.jpg" alt="" class="img-fluid" style="border-radius: 50px;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Stories Section -->
+    <div id="storyCont">
+        <div class="row">
+            <div class="col-12 col-lg-6 order-lg-last" id="storyMain">
+                <span id="storyHeading">
+                    Success Stories
+                </span>
+
+                <p id="storyText">
+                    Discover success stories from historic and modern expeditions that shaped mountaineering history.
+                </p>
+
+                <div id="storyBtnParent">
+                    <button class="btn" id="storyBtn">Explore Stories</button>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 order-lg-first">
+                <img src="./imgs/home-stories.jpg" alt="" class="img-fluid" style="border-radius: 50px;">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Gallery Section -->
+    <div class="container-fluid">
+        <div class="row text-center" id="galleryHead">
+            <div class="col-12" style="font-size: 36px; font-weight: 550;">
+                Gallery
+            </div>
+            <div class="col-12" style="font-size: 20px;">
+                Experience mountaineering through a visual collection of landscapes, climbers, and expeditions.
+            </div>
+            <div class="col-12">
+                <button class="btn" id="galleryBtn">Explore Gallery</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div id="galleryCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <!-- Carousel Indicators -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0"
+                            class="active"></button>
+                        <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2"></button>
+                    </div>
+
+                    <!-- Main Carousel Items -->
+                    <div class="carousel-inner mx-auto">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <div class="container-fluid gallery-carousel">
+                                <div class="row">
+                                    <div class="col-4 gallery-carousel-item text-center">
+                                        <img src="./gallery/Gallery-1.jfif" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-4 gallery-carousel-item text-center">
+                                        <img src="./gallery/Gallery-2.jfif" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-4 gallery-carousel-item text-center">
+                                        <img src="./gallery/Gallery-3.jfif" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <div class="container-fluid gallery-carousel">
+                                <div class="row">
+                                    <div class="col-4 gallery-carousel-item text-center">
+                                        <img src="./gallery/Gallery-4.jfif" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-4 gallery-carousel-item text-center">
+                                        <img src="./gallery/Gallery-5.jfif" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-4 gallery-carousel-item text-center">
+                                        <img src="./gallery/Gallery-6.jfif" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <div class="container-fluid gallery-carousel">
+                                <div class="row">
+                                    <div class="col-4 gallery-carousel-item text-center">
+                                        <img src="./gallery/Gallery-7.jfif" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-4 gallery-carousel-item text-center">
+                                        <img src="./gallery/Gallery-8.jfif" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-4 gallery-carousel-item text-center">
+                                        <img src="./gallery/Gallery-9.jfif" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carousel buttons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Clubs & Organizations -->
+    <div class="container-fluid" style="margin-top: 5rem; margin-bottom: 2rem;">
+        <div class="row text-center" style="margin-bottom: 1rem;">
+            <div class="col-12" style="font-size: 36px; font-weight: 550;">Clubs & Organizations</div>
+        </div>
+        <div class="row" style="padding: 0 2rem;">
+            <div class="col-12 col-lg-6" id="clubCont">
+                <p style="font-size: 20px;">
+                    Mountaineering is supported by a global network of clubs and organizations that promote training,
+                    safety, and exploration across major mountain regions. These groups play an important role in
+                    guiding expeditions, supporting climbers, and preserving mountain environments.
+                </p>
+
+                <div class="col-12">
+                    <button class="btn" id="clubBtn">Explore Clubs & Organizations</button>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <img src="./imgs/home-clubs.jpg" alt="" class="img-fluid" style="border-radius: 50px;">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- About Us -->
+    <div class="container-fluid" style="margin: 5rem 0;">
+        <div class="row text-center mx-5">
+            <div class="col-12" style="font-size: 36px; font-weight: 550;">
+                About Us
+            </div>
+            <div class="col-12" style="font-size: 20px;">
+                <p>
+                    This project explores mountaineering as both a physical pursuit and a field of study,
+                    covering its history, practices, risks, and achievements. It aims to present accurate, structured
+                    information while highlighting the global nature of mountain exploration.
+                </p>
+            </div>
+        </div>
+        <div class="row" id="aboutPic">
+        </div>
+    </div>
+
 
     <!-- Footer Start -->
-    <footer class="mt-auto text-light" id="footerTag">
-        <div class="container-fluid px-5 py-2">
-            <row class="row mt-5 w-100 px-5">
-                <div class="col-4">
-                    <h1>[Placeholder]</h1>
+    <footer class="mt-auto" id="footerTag">
+        <div class="container-fluid px-5 py-4">
+            <!-- Footer Top text -->
+            <div class="row">
+                <div class="col-12 text-center mt-2">
+                    <img src="./brand/png/Mountaineering-light.png" alt="" class="img-fluid" id="footerBrand">
                 </div>
-                <div class="col-8">
-                    <h4>Items</h4>
+            </div>
+
+            <!-- Footer Columns -->
+            <div class="row mt-3">
+
+                <!-- Empty Column -->
+                <div class="col d-none d-xl-block"></div>
+
+                <!-- Mountaineering (Column 1) -->
+                <div class="col-6 col-lg-3 col-xl-3">
+                    <ul class="footer-list">
+                        <li class="footer-heading">Mountaineering</li>
+                        <li class="footer-list-item mt-2"><a href="./home.html" class="footer-link">Home</a></li>
+                        <li class="footer-list-item"><a href="./history.html" class="footer-link">History</a></li>
+                        <li class="footer-list-item"><a href="./aboutus.html" class="footer-link">About Us</a></li>
+                        <li class="footer-list-item"><a href="./gallery.html" class="footer-link">Gallery</a></li>
+                    </ul>
                 </div>
-            </row>
+
+                <!-- Explore (Column 2) -->
+                <div class="col-6 col-lg-3 col-xl-3">
+                    <ul class="footer-list">
+                        <li class="footer-heading">Explore</li>
+                        <li class="footer-list-item mt-2"><a href="./types-styles.html" class="footer-link">Types &
+                                Styles</a></li>
+                        <li class="footer-list-item"><a href="./techniques.html" class="footer-link">Techniques</a></li>
+                        <li class="footer-list-item"><a href="./sheltering.html" class="footer-link">Sheltering</a></li>
+                        <li class="footer-list-item"><a href="./records.html" class="footer-link">Records</a></li>
+                        <li class="footer-list-item"><a href="./clubs-org.html" class="footer-link">Clubs &
+                                Organizations</a></li>
+                    </ul>
+                </div>
+
+                <!-- Safety & Updates (Column 3) -->
+                <div class="col-6 col-lg-3 col-xl-3">
+                    <ul class="footer-list">
+                        <li class="footer-heading">Safety & Updates</li>
+                        <li class="footer-list-item mt-2"><a href="./hazards.html" class="footer-link">Hazards</a></li>
+                        <li class="footer-list-item"><a href="./safety-guidelines.html" class="footer-link">Safety
+                                Guidelines</a></li>
+                        <li class="footer-list-item"><a href="./weather-risk.html" class="footer-link">Weather &
+                                Risk</a></li>
+                        <li class="footer-list-item"><a href="./success-stories.html" class="footer-link">Success
+                                Stories</a></li>
+                        <li class="footer-list-item"><a href="./news.html" class="footer-link">News</a></li>
+                    </ul>
+                </div>
+
+                <!-- Empty Column -->
+                <div class="col d-none d-xl-block"></div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <ul class="d-flex justify-content-center gap-4 mt-5" id="footerBase">
+                        <li><i class="bi bi-c-circle"></i> 2026 Mountaineering</li>
+                        <li><a href="#" class="footer-base">Privacy Policy</a></li>
+                        <li><a href="#" class="footer-base">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
 
+    <!-- Bootstrap JS Link -->
     <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- Base Javascript link -->
+    <script src="./js/base.js"></script>
+    <!-- Page specific JS link -->
+    <script src="./js/home.js"></script>
 </body>
 
 </html>

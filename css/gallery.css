@@ -34,7 +34,7 @@
 /* Gallery items margin and styling */
 .gallery-item{
     width: 100%;
-    border-radius: 50px;
+    border-radius: 3vw;
     margin: 1rem auto;
     transition: transform 0.125s ease-in-out;
 }
