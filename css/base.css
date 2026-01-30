@@ -288,11 +288,11 @@ body {
     }
 
     #HeaderContent h1 {
-        font-size: 64px;
+        font-size: 2rem;
     }
 
     #HeaderContent p {
-        font-size: 18px;
+        font-size: 1rem;
     }
 }
 

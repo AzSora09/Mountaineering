@@ -17,3 +17,8 @@ $("#clubBtn").click(function(){
     window.location.href="./clubs-org.html";
     return false;
 })
+
+$("#aboutBtn").click(function(){
+    window.location.href="./aboutus.html";
+    return false;
+})
