@@ -1,3 +1,12 @@
+:root{
+    font-size: 20px;
+    
+    @media(max-width: 768px){
+        font-size: 16px;
+    }
+}
+
+
 /* Header Image */
 #headerID {
     background: url("../imgs/Clubs-Hero.jpg") no-repeat top;
@@ -17,4 +26,10 @@
 #HeaderContent {
     position: relative;
     top: 35%;
+}
+
+#headingSect{
+    /* font-size: 20px; */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
