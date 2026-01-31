@@ -22,7 +22,7 @@
 /* Container of Introduction Section */
 #introSect {
     background: url("../imgs/home-intro.jpg") no-repeat;
-    background-size: 100% auto;
+    background-size: 100vw auto;
 }
 
 /* Heading in Introduction */
@@ -39,7 +39,7 @@
     margin-top: 3rem;
 }
 
-/* Intro Content styling change for small screen */
+/* Intro content styling for large screen */
 @media(min-width: 768px) {
     #introCont {
         background: rgba(40, 59, 81, 0.8);
@@ -52,19 +52,44 @@
     }
 }
 
-/* Intro content styling for large screen */
+/* Intro Content styling change for small screen */
 @media(max-width: 768px) {
+
+    #introSect {
+        height: 20rem;
+        width: 100vw;
+        background-size: cover;
+        background-position: 50% 70%;
+    }
+
     #introCont {
         background: linear-gradient(to right, rgba(40, 59, 81, 1), rgba(40, 59, 81, 0.35));
-        padding: 3rem 2rem;
+        padding: 1rem 1rem;
+        height: 100%;
+        width: 100vw;
+    }
+
+    .row:has(#introCont) {
+        height: inherit;
+        width: 100vw;
+    }
+
+    #introHeading {
+        font-size: 2rem;
+    }
+
+    #introText {
+        font-size: 1rem;
+        margin-top: 1rem;
     }
 }
 
 /* Maincont header */
-#centralHead{
+#centralHead {
     font-size: 50px;
     font-weight: 550;
 }
+
 @media(max-width: 768px) {
     #centralHead {
         font-size: 2.6rem;
@@ -275,6 +300,12 @@
     background: url("../imgs/home-about.jpg") no-repeat bottom;
     background-size: 100% auto;
     height: 70vh;
+}
+
+@media(max-width: 768px) {
+    #aboutPic {
+        height: 20vh;
+    }
 }
 
 #aboutBtn {

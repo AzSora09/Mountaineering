@@ -266,7 +266,7 @@ body {
 /* Header Text styling */
 #HeaderContent {
     background: rgba(0, 0, 0, 0.2);
-    position: absolute;
+    position: relative;
     top: 30%;
     color: rgb(255, 255, 255);
 }
@@ -288,13 +288,15 @@ body {
     }
 
     #HeaderContent h1 {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     #HeaderContent p {
-        font-size: 1.7rem;
+        font-size: 1.3rem;
     }
 }
+
+
 
 
 

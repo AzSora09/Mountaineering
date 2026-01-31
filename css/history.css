@@ -9,7 +9,7 @@
 /* Header image would change size in diffeerent screen size */
 @media(max-width: 768px) {
     #headerID {
-        height: 45vh;
+        height: 75vh;
     }
 }
 
