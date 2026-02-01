@@ -105,22 +105,125 @@
 
 
     <!-- Main Content -->
-    <div class="container" id="headingSect">
-        <div class="row text-center" style="">
+    <div class="container-fluid" id="headingSect">
+        <div class="row text-center">
             <div class="col-12">
                 <p>
-                    This page highlights major mountains first because each mountain serves as a hub for multiple
-                    climbing clubs. Selecting a mountain card will show the clubs planning expeditions there, along with
-                    location details.
+                    Major mountains are shown here along with the mountaineering communities and organizations connected to them.
                 </p>
             </div>
         </div>
     </div>
 
-    <div class="container">
+
+    <!-- div Containing all Cards -->
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-6 col-lg-4">
-                
+
+            <!-- Card 1 -->
+            <div class="col-12 col-md-6 card-container">
+                <div class="container Cards">
+
+                    <!-- Card Heading -->
+                    <div class="row text-center">
+                        <span class="card-heading">Mount Everest</span>
+                    </div>
+
+                    <!-- Card Text Content -->
+                    <div class="row">
+                        <p class="card-content">
+                            Mount Everest is the highest mountain on Earth and stands as one of the most iconic
+                            destinations in mountaineering, attracting climbers from around the world.
+                        </p>
+                        <!-- Button -->
+                        <button class="card-button" id="evrstBtn">Explore More</button>
+                    </div>
+
+                    <!-- Card Image -->
+                    <div class="row">
+                        <img src="./imgs/clubs-everest.jpg" alt="" class="img-fluid card-img">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-12 col-md-6 card-container">
+                <div class="container Cards">
+
+                    <!-- Card Heading -->
+                    <div class="row text-center">
+                        <span class="card-heading">K2</span>
+                    </div>
+
+                    <!-- Card Text Content -->
+                    <div class="row">
+                        <p class="card-content">
+                            K2 is the second-highest mountain in the world and is widely regarded as one of the most
+                            challenging peaks due to its steep routes and extreme conditions.
+                        </p>
+                        <!-- Button -->
+                        <button class="card-button" id="k2Btn">Explore More</button>
+                    </div>
+
+                    <!-- Card Image -->
+                    <div class="row">
+                        <img src="./imgs/clubs-k2.jpg" alt="" class="img-fluid card-img">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-12 col-md-6 card-container">
+                <div class="container Cards">
+
+                    <!-- Card Heading -->
+                    <div class="row text-center">
+                        <span class="card-heading">Nanga Parbat</span>
+                    </div>
+
+                    <!-- Card Text Content -->
+                    <div class="row">
+                        <p class="card-content">
+                            Nanga Parbat is a massive Himalayan peak known for its prominent faces and reputation as one of the most difficult mountains to climb.
+                        </p>
+                        <!-- Button -->
+                        <button class="card-button" id="nangaParbatBtn">Explore More</button>
+                    </div>
+
+                    <!-- Card Image -->
+                    <div class="row">
+                        <img src="./imgs/clubs-nanga-parbat.jpg" alt="" class="img-fluid card-img">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-12 col-md-6 card-container">
+                <div class="container Cards">
+
+                    <!-- Card Heading -->
+                    <div class="row text-center">
+                        <span class="card-heading">Annapurna</span>
+                    </div>
+
+                    <!-- Card Text Content -->
+                    <div class="row">
+                        <p class="card-content">
+                            Annapurna is a major Himalayan mountain recognized for its technical terrain and history of demanding ascents.
+                        </p>
+                        <!-- Button -->
+                        <button class="card-button" id="annapurnaBtn">Explore More</button>
+                    </div>
+
+                    <!-- Card Image -->
+                    <div class="row">
+                        <img src="./imgs/clubs-annapurna.jpg" alt="" class="img-fluid card-img">
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
@@ -205,6 +308,8 @@
     <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <!-- Base Javascript link -->
     <script src="./js/base.js"></script>
+    <!-- Page specific JS link -->
+     <script src="./js/clubs-org.js"></script>
 </body>
 
 </html>

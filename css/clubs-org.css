@@ -2,7 +2,7 @@
     font-size: 20px;
     
     @media(max-width: 768px){
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 
@@ -29,7 +29,63 @@
 }
 
 #headingSect{
-    /* font-size: 20px; */
+    font-size: 1.25rem;
+    font-weight: 600;
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+.card-container{
+    margin: 1rem 0;
+}
+
+.container-fluid:has(.row .card-container){
+    padding: 1rem 3rem;
+}
+
+.Cards{
+    padding: 0.5rem;
+    border-radius: 2rem;
+    background: #e0e0e0;
+    box-shadow: 10px 10px 20px #cacaca,
+        -10px -10px 20px #f6f6f6;
+    height: fit-content;
+}
+
+.card-heading{
+    font-size: 2rem;
+    font-weight: 650;
+}
+
+.card-content{
+    margin: 1rem 0 0.5rem;
+    padding: 0 2rem;
+    font-size: 1.1rem;
+}
+
+.card-button{
+    width: fit-content;
+    margin: 1.3rem auto;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 1.2rem;
+    border-radius: 0.5em;
+    background: #e0e0e0;
+    cursor: pointer;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+.card-button:active{
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+.row:has(.card-img){
+    padding: 0 1rem 1rem;
+}
+.card-img{
+    border-radius: 2rem;
+    width: 100%;
+    height: auto;
 }
